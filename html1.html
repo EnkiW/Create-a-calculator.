@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css1.css">
+</head>
+<body>
+<span class="help">
+            <ol>
+                <li>Написать любое число в первом текстовом канале.</li>
+                <li>Выбрать действие с этим числом.</li>
+                <li>Написать любое во втором текстовом канале.</li>
+                <li>Нажать на кнопку "посчитать".</li>
+                <li>Получить результат.</li>
+            </ol>
+        </span>
+<div class="allcal">
+
+    <div class="inallcal">
+
+        <div class="padding">
+            <div class="txt">
+                <input id="num1"/>
+                <input id="num2"/>
+            </div>
+            <div class="knopki">
+                <div class="pod1">
+                    <button class="onenine1" onclick="setNum1(1)">1</button>
+                    <button class="onenine1" onclick="setNum1(2)">2</button>
+                    <button class="onenine1" onclick="setNum1(3)">3</button>
+                    <button class="onenine1" onclick="setNum1(4)">4</button>
+                    <button class="onenine1" onclick="setNum1(5)">5</button>
+                    <button class="onenine1" onclick="setNum1(6)">6</button>
+                    <button class="onenine1" onclick="setNum1(7)">7</button>
+                    <button class="onenine1" onclick="setNum1(8)">8</button>
+                    <button class="onenine1" onclick="setNum1(9)">9</button>
+                    <button class="onenine1" onclick="del1()">DEL</button>
+                    <button class="onenine1" onclick="setNum1(0)">0</button>
+                </div>
+                <div class="operator_btns">
+                    <button class="dutt" id="plus" onclick="op='+'">+</button>
+                    <button class="dutt" id="minus" onclick="op='-'">-</button>
+                    <button class="dutt" id="times" onclick="op='*'">x</button>
+                    <button class="dutt" id="divide" onclick="op='/'">:</button>
+                </div>
+                <div class="pod2">
+                    <button class="onenine2" onclick="setNum2(1)">1</button>
+                    <button class="onenine2" onclick="setNum2(2)">2</button>
+                    <button class="onenine2" onclick="setNum2(3)">3</button>
+                    <button class="onenine2" onclick="setNum2(4)">4</button>
+                    <button class="onenine2" onclick="setNum2(5)">5</button>
+                    <button class="onenine2" onclick="setNum2(6)">6</button>
+                    <button class="onenine2" onclick="setNum2(7)">7</button>
+                    <button class="onenine2" onclick="setNum2(8)">8</button>
+                    <button class="onenine2" onclick="setNum2(9)">9</button>
+                    <button class="onenine2" onclick="del2()">DEL</button>
+                    <button class="onenine2" onclick="setNum2(0)">0</button>
+
+                </div>
+            </div>
+        </div>
+
+        <button class="duttpod" onclick="func()">Посчитать</button>
+        <p class="rez">Результат:<span class="rez1" id="result"></span></p>
+    </div>
+</div>
+<script type="text/javascript" src="js1.js"></script>
+</body>
+</html>
+
